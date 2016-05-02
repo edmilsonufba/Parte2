@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+			<link rel="stylesheet"
+			type="text/css" href="Layout Principal.css" />
+			<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+				<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+				<script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+				
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+
+	    <script src="js/app.js"></script>
+		
+
+		<script>
+$(function() {
+    $( "#date" ).datepicker({
+        dateFormat: 'dd/mm/yy',
+        dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+        dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+        dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+        monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+        monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+    });
+	$( "#date2" ).datepicker({
+        dateFormat: 'dd/mm/yy',
+        dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+        dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+        dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+        monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+        monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+    });
+});
+</script>
+	</head>
+
+
+
+	<body>
+		<div>
+			<h1> Dívida Pública Federal</h1>
+		</div>
+
+		<div>
+			<label>Data Inicial:</label> <input id="date" type="text" size="10" />   <label>Data Final:</label> <input id="date2" type="text" size="10" /> <input name="b1" type="button" value="Calcular">
+		</div>
+			
+		<div>
+			<canvas id="myChart" width="400" height="400"></canvas>
+		</div>
+		
+		<div id="left">
+			<label>Noticias</label>
+		
+		</div>
+
+		<div>
+
+			<iframe src="http://g1.globo.com/busca?q=divida+publica+federal&cat=b&ss=8f834b90ecc257b1&st=G1" width="600" height="1000" scrolling="yes" frameborder="0" target="_self">
+			</iframe>
+			
+		</div>
+		
+		<div id="right">
+
+			<a class="twitter-timeline" href="https://twitter.com/search?q=divida%20publica%20federal%20since%3A2006-03-22%20until%3A2016-05-02" data-widget-id="727199914250387457">Tweets sobre divida publica federal</a>
+
+
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+			</script>
+
+
+		</div>
+		
+
+
+	</body>
+	
+
+</html>
