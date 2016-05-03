@@ -47,15 +47,16 @@ $(function() {
 			
 		</nav>
 		<div class="conteudo">
-			<div id="Data">
+			<div id="data">
 				<label>Data Inicial:</label> <input id="date" type="text" size="10" />   <label>Data Final:</label> <input id="date2" type="text" size="10" /> <input name="b1" type="button" value="Calcular">
 			</div>
 			<div id="grafico">
+				<p class="Titulo" id="titulografico">Grafico da divida publica federal ao longo dos anos</p>	
 				<canvas id="myChart" ></canvas>
 			</div>
 			<div id="noticias">
-				<label>Noticias</label>
-				<iframe src="http://g1.globo.com/busca?q=divida+publica+federal&cat=b&ss=8f834b90ecc257b1&st=G1" scrolling="yes" frameborder="0" target="_self">
+				<p class="Titulo" id="titulonoticia">Noticias</p>
+				<iframe id="noticiaglobo" src="http://g1.globo.com/busca?q=divida+publica+federal&cat=b&ss=8f834b90ecc257b1&st=G1" scrolling="yes" frameborder="0" target="_self">
 				</iframe>
 			</div>
 			<div id="twitter">
@@ -65,7 +66,7 @@ $(function() {
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 			</script>
 			</div>
-			<footer>Trabalho de Sistemas Web</footer>		
+				
 		</div>
 	</body>
 </html>
