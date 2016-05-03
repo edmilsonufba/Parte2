@@ -21,7 +21,7 @@ $(function () {
 	};
 
 	// Step 2. Get the context of the canvas element we want to select
-	var ctx = document.getElementById("myChart").getContext("2d");
+	var ctx = document.getElementById("graficoDividaPublica").getContext("2d");
 	var myNewChart = new Chart(ctx).Line(data, {
 	    ///Boolean - Whether grid lines are shown across the chart
 	    scaleShowGridLines : true,
